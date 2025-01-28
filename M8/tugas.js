@@ -24,7 +24,7 @@ if (mtkAndi >= 91 || ipaAndi >= 91 || ipsAndi >= 91) {
 let isLogin = false;
 
 if (!isLogin){
-    console.log('Andi Belum Login')
+    console.log('Anda Belum Login')
 } else {
-    console.log('Andi Sudah Login')
+    console.log('Anda Sudah Login')
 }
