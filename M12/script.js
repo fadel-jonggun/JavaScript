@@ -41,22 +41,71 @@
 // Expression Funtion vs Decralation Function
 // 1 Perbedaan Sintak
 // Deklarasi Sintak
-function nilai(){
-    return 100;
-    }
-// Expression Sintak
-let nilai2 = function(){
-    return 100;
-    }
+// function nilai(){
+//     return 100;
+//     }
+// // Expression Sintak
+// let nilai2 = function(){
+//     return 100;
+//     }
 
-    // 2 JavaScript Engine
-// Deklarasi Sintak
-function Holla(){
-    alert("Hello World");
-    }
-Holla()
-    // Expression Sintak    
-    let Holla2 = function(){
-        alert   ("Hello World2");
-        }
-        Holla2()
+//     // 2 JavaScript Engine
+// // Deklarasi Sintak
+// function Holla(){
+//     alert("Hello World");
+//     }
+// Holla()
+//     // Expression Sintak
+//     let Holla2 = function(){
+//         alert   ("Hello World2");
+//         }
+//         Holla2()
+
+// Deklarasi Function
+function deklarasi(params) {
+  console.log("deklarasi");
+}
+
+//  Ekspresi Function
+let ekspresi = function (params) {
+  console.log("ekspresi");
+};
+
+// Arrow Function
+let arrow = (params) => {
+  console.log("arrow");
+};
+
+// Eksekusi Pemanggilan
+deklarasi();
+ekspresi();
+arrow();
+
+// Contoh Arrow Function
+let sum = (a, b) => {
+  return a + b;
+};
+
+console.log(sum(1, 2));
+
+// Refactor
+let total = (c, d) => c + d;
+console.log(total(5, 6));
+
+// Hanya 1 Param
+let tampil = (username) => `Hello , ${username}`;
+console.log(tampil("Fadel"));
+
+// Fungsi arrow multi baris
+let perkalian = (e, f) => {
+    return e * f + 1;
+}
+console.log(perkalian(1, 6))
+
+// Fungsi Arrow Tanpa Param
+let sayHello = () => "Hello";
+console.log(sayHello());
+
+// Fungsi Arrow dengan 1 Param
+let sayHello2 = (nama) => `Hello , ${nama}`;
+console.log(sayHello2("Fadel"));
